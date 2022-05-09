@@ -18,6 +18,7 @@ device='cuda' if torch.cuda.is_available() else 'cpu'
 
 import os
 import torch
+import time
 from transformers import BertForSequenceClassification, BertTokenizer,BertConfig
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 from transformers import Trainer, TrainingArguments
